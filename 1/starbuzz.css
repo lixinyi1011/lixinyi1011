@@ -1,0 +1,339 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 品牌栏样式 */
+.brand-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.su-brand {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* 网关导航样式 */
+.gateway-nav {
+  display: flex;
+  align-items: center;
+}
+
+.gateway-nav-label {
+  margin-right: 10px;
+}
+
+.gateway-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.gateway-menu li {
+  margin-left: 15px;
+}
+
+.gateway-menu li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.gateway-menu li a:hover {
+  border-bottom: 2px solid white; /* 鼠标悬停颜色变化 */
+}
+
+/* 菜单和搜索按钮样式 */
+.menu-toggle,
+.search-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-toggle:hover,
+.search-toggle:hover {
+  border-bottom: 2px solid white; /* 鼠标悬停颜色变化 */
+}
+
+/* 主导航样式 */
+.site-navigation {
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+}
+
+.primary-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.primary-menu li {
+  padding: 15px 20px;
+}
+
+/* 品牌栏文字颜色 */
+.brand-bar {
+  color: white;
+}
+
+.su-brand {
+  color: white;
+}
+
+/* 网关导航文字颜色 */
+.brand-bar .menu-gateway-nav li a,
+.brand-bar .gateway-nav--label {
+    color: white;
+}
+
+/* 主导航文字颜色 */
+.site-navigation .primary-menu li a {
+    color: white;
+}
+
+/* 搜索和菜单按钮文字颜色 */
+.brand-bar .search-toggle,
+.brand-bar .menu-toggle {
+    color: white;
+}
+
+/* 菜单和搜索按钮文字颜色 */
+.menu-toggle,
+.search-toggle {
+  color: white;
+}
+
+/* 主导航文字颜色 */
+.primary-menu li a {
+  color: white;
+  /* 增大字体大小，可根据需求调整数值 */
+  font-size: 1.2em; 
+}
+
+/* 网关导航横向布局文字颜色 */
+#menu-gateway-nav li a {
+  color: white;
+}
+
+.primary-menu li a:hover {
+  border-bottom: 2px solid white;/* 鼠标悬停颜色变化 */
+}
+
+
+
+.panel.theme--choco {
+  background-image: url('https://www.stanford.edu/wp-content/uploads/2023/10/Hero-3-2-scaled.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* 确保子元素绝对定位参照此容器 */
+}
+.splash--wordmark {
+  display: none; /* 隐藏 p 标签里多余的 Stanford */
+}
+
+.panel.theme--choco {
+  background-image: url('https://www.stanford.edu/wp-content/uploads/2023/10/Hero-3-2-scaled.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.image-container {
+  background-image: url('具体图片路径');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 网关导航横向布局 */
+.menu-gateway-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-gateway-nav li {
+  margin-right: 15px;
+}
+
+/* 主导航横向布局 */
+.primary-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.primary-menu li {
+  margin-right: 15px;
+}
+
+ul {
+  list-style-type: none; /* 移除列表项前面的默认符号 */
+  margin: 0;
+  padding: 0;
+}
+
+/* 网关导航横向布局 */
+#menu-gateway-nav {
+  display: flex; /* 使用 Flexbox 布局 */
+  gap: 10px; /* 设置列表项之间的间距 */
+}
+
+/* 主导航横向布局 */
+.primary-menu {
+  display: flex; /* 使用 Flexbox 布局 */
+  gap: 10px; /* 设置列表项之间的间距 */
+}
+
+/* 导航链接样式 */
+#menu-gateway-nav li a,
+.primary-menu li a {
+  text-decoration: none; /* 移除链接下划线 */
+  display: block; /* 让链接填充整个列表项 */
+  padding: 5px 10px; /* 设置链接内边距 */
+}
+
+/* 鼠标悬停时的链接样式 */
+#menu-gateway-nav li a:hover,
+.primary-menu li a:hover {
+  background-color: #f0f0f0; /* 鼠标悬停时的背景颜色 */
+}
+
+.gateway-menu li a:hover,
+.primary-menu li a:hover,
+#menu-gateway-nav li a:hover {
+  border-bottom: 2px solid white; /* 鼠标悬停时显示 2 像素宽的白色下边框 */
+  background-color: transparent; /* 确保悬停时背景透明 */
+}
+
+/* 菜单和搜索按钮悬停样式 */
+.menu-toggle:hover,
+.search-toggle:hover {
+  border-bottom: 2px solid white; /* 鼠标悬停时显示 2 像素宽的白色下边框 */
+}
+
+bady{
+  color: #000;
+}
+#menu-gateway-nav li {
+  /* 可以根据需求调整左右外边距 */
+  margin-left: 5px; 
+  margin-right: 1px; 
+}
+
+/* 减小主导航列表项的间隔 */
+.primary-menu {
+  /* 减小列表项之间的间距 */
+  gap: 5px; 
+}
+
+.primary-menu li {
+  /* 减小内边距 */
+  padding: 10px 10px; 
+  /* 减小外边距 */
+  margin-left: 25px; 
+  margin-right: 2px; 
+}
+
+/* 调整品牌栏的内边距，减少底部内边距 */
+.brand-bar {
+  padding: 5px 5px; /* 原有样式 */
+  /* 可以根据需求进一步减小底部内边距 */
+  padding-bottom: 1px; 
+}
+
+/* 调整网关导航的外边距，减少顶部外边距 */
+.gateway-nav {
+  /* 可以根据需求设置顶部外边距为更小的值 */
+  margin-top: 1px; 
+}
+
+.splash-parallax #site-navigation.theme--choco:before {
+  background: linear-gradient(0deg, transparent, rgba(0, 0, 0, .99)), linear-gradient(0deg, transparent 20%, rgba(0, 0, 0, .6));
+}
+
+.splash--scroller {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  background-color: red;
+}
+
+.image-container {
+  position: relative; /* 确保子元素绝对定位基于此容器 */
+}
+
+.splash--scroller {
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  right: 300px;
+  margin: 0;
+  background-color: red;
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  font: weight 1000px;
+}
+
+.stanford-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    font-size: 120px; /* 增大字体大小 */
+    font-family: 宋体;
+    font-weight: 1500;
+}
+
+
+.explore-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: red; /* 可根据需要修改背景颜色 */
+    padding: 10px 0;
+}
+
+.explore-link {
+    color: white; /* 可根据需要修改文字颜色 */
+    text-decoration: none;
+    font-size: 16px; /* 可根据需要修改字体大小 */
+}
+
+#menu-gateway-nav li a {
+  color: white; 
+}
+
+/* 主导航字体颜色 */
+.primary-menu li a {
+  color: white; 
+}
+
+
+
+
